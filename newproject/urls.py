@@ -3,9 +3,13 @@ from. import views
 
 
 
+
 urlpatterns=[
     path('',views.home, name='home'),
     path('room/',views.room,name='home'),
     path('navbar/',views.navbar,name='navbar'),
-    path('main/',views.main,name='main')
+    path('main/',views.main,name='main'),
+    path('login/',views.login,name='login'),
+    path('signup/',views.signup,name='signup')
+
 ]
