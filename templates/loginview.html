@@ -14,8 +14,8 @@
             flex-direction: column;
             align-items: center;
             /* padding-left: 50px; */
-            width:500px;
-            height: 450px;
+            width:350px;
+            height: 350px;
             position: absolute;
             /* border: .5px solid gray; */
             background-color:#ebe1d9;
@@ -51,6 +51,8 @@
             margin-left: 43px;
             width: 250px;
             margin-right: 43px;
+            margin: auto;
+            
         }
         button:hover{
             background-color:  plum
@@ -63,7 +65,10 @@
             color: blue;
         }
         body{
-            background-color: lightpink;
+            background-image: url(https://th.bing.com/th/id/OIP.QOKLFI7-SMhiupT6OwdiWwHaDe?pid=ImgDet&rs=1);
+            background-size: cover;
+            
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -72,6 +77,9 @@
     <div class="detail">
         <h2>Login to your account</h2>
         <br>
+        
+<form action="" method="post">
+    {% csrf_token %}
     <label for="">Username</label>
     <input type="text" name="uname" placeholder="Enter username">
    
@@ -82,10 +90,11 @@
     <br>
     <br>
     <button type="submit">Login</button>
-    <hr>
-    <br>
+</form>
+    
     <br>
     <h4>Don't have an account? register <a href="">Here</a></h4>
+
 </div>
 </body>
 </html>

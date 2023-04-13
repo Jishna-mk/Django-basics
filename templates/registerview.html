@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+<form action="" method="post">
+    {% csrf_token %}
     <label for="">Username</label><br>
-    <input type="text" name="uname">
+    <input type="text" name="username" id="username">
     <br>
     <br>
     <label for="">Email</label><br>
@@ -20,9 +22,10 @@
     <br>
     <br>
     <label for="">confirm password</label><br>
-    <input type="password">
+    <input type="password" id="password">
     <br>
     <br>
     <button type="submit">Register</button>
+</form>
 </body>
 </html>
